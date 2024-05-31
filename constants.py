@@ -1,0 +1,1 @@
+SLUG_LENGTH = 5
