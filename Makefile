@@ -7,5 +7,5 @@ build:
 run:
 	docker run -p 5000:5000 ${NAME}:${TAG}
 
-test:
-	pytest tests.py
+test: build
+	docker run -t ${NAME}:${TAG} pytest tests.py
